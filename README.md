@@ -39,7 +39,13 @@ __If additional RAW photos are added to the directory to be included in processi
 	7.	paired_data is ready for photo analysis!
 
 ## Processing the photos (Selecting useful photos, Panel/Water extraction)
-
+**The _paired_data_ structure is automatically updated as photos are processed.**\
+	1.	photoAnalysis.m: Run script.\
+	2.	Follow prompts given in MATLAB Command Window. Note:\
+	⁃	The corners of the square/rectangular selection **must** be selected in the order prompted (top left, top right, bottom left, bottom right).\
+	⁃	To make a selection when prompted, type the number associated with your choice and press enter to send the command.\
+	⁃	If a mistake is made during selection (ie. selected corners in wrong order), you can discard the photo selection when asked to save (at the end of the photo’s selection process).
+	
 ## Plotting turbidity vs. reflectance of all analyzed photos
 
 ## Machine Learning Models
