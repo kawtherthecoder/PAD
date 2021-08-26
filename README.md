@@ -30,7 +30,7 @@ __If additional RAW photos are added to the directory to be included in processi
 	1.	createPairedData.m: Change new to be 0 (since paired_data has already been created and new photos need to be added to it)\
 	2.	createPairedData.m: Run script.\
 	3.	pad_boatmountedctd_2019.mat: Load file.\
-	4.	pad_boatmountedctd_2019.mat: Choose appropriate boat-mounted turbidity data file (labeled as rsk)\
+	4.	pad_boatmountedctd_2019.mat: Choose appropriate boat-mounted turbidity data file (labeled as *rsk*)\
 	⁃	rsk1 = August 11, 2019\
 	⁃	rsk2 = August 12, 2019\
 	⁃	rsk3 = August 13, 2019\
