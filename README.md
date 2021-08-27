@@ -46,7 +46,7 @@ __If additional RAW photos are added to the directory to be included in processi
 	⁃	To make a selection when prompted, type the number associated with your choice and press enter to send the command.\
 	⁃	If a mistake is made during selection (ie. selected corners in wrong order), you can discard the photo selection when asked to save (at the end of the photo’s selection process).
 	
-## Plotting turbidity vs. reflectance of all analyzed photos
+## Plotting turbidity vs. reflectance of all processed photos
 **Estimate reflectance using all six panels weighted equally:**\
 	1.	plotTuNormRef.m: Run script.\
 	2.	Three plots will appear illustrating example digital number vs. reflectance curves in each band using the six panels and their mean reflectances over red, green, and near-infrared band wavelengths. These curves are used to estimate the reflectance of the water in each band.\
