@@ -1,6 +1,6 @@
 # ESTIMATING TURBIDITY USING UAV IMAGERY IN THE PAD: HELPFUL INFORMATION
-**Note: MATLAB file descriptions are outputted to the Command Window using the command:**\
-help (filename)
+**Note: MATLAB file descriptions are outputted to the Command Window using the help command:**
+>help [filename]
 
 ## Preparing image data for analysis (Creating and updating paired_data.mat)
 
