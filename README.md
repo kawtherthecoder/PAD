@@ -47,6 +47,10 @@ __If additional RAW photos are added to the directory to be included in processi
 	⁃	If a mistake is made during selection (ie. selected corners in wrong order), you can discard the photo selection when asked to save (at the end of the photo’s selection process).
 	
 ## Plotting turbidity vs. reflectance of all analyzed photos
+**Estimate reflectance using all six panels weighted equally:**\
+	1.	plotTuNormRef.m: Run script.\
+	2.	Three plots will appear illustrating example digital number vs. reflectance curves in each band using the six panels and their mean reflectances over red, green, and near-infrared band wavelengths. These curves are used to estimate the reflectance of the water in each band.\
+**Note: To estimate reflectance using only the black and white panels (averaged over all wavelengths), run plotTuNormRefBW.m instead.**
 
 ## Machine Learning Models
 **Two machine learning models are used in this application: Support Vector Machine (SVM) regression and Random Forest regression. Each model is trained in two ways: 1) using the R, G, and N band reflectances to predict turbidity and 2) using the RGN bands plus a feature averaging the three band reflectances to predict turbidity.**\
