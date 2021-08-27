@@ -55,7 +55,7 @@ __If additional RAW photos are added to the directory to be included in processi
 
 ## Machine Learning Models
 **Two machine learning models are used in this application: Support Vector Machine (SVM) regression and Random Forest regression. Each model is trained in two ways: 1) using the R, G, and N band reflectances to predict turbidity and 2) using the RGN bands plus a feature averaging the three band reflectances to predict turbidity.**\
-	1.	plotTuNormRef.m: Run script. (Outputs refRGNTu)\
-	2.	makeDataTable.m: Pass refRGNTu to this function and run. (Outputs train and test, which contain training and testing data for the models using stratified sampling by date)\
+	1.	plotTuNormRef.m: Run script. (Outputs *refRGNTu*)\
+	2.	makeDataTable.m: Pass *refRGNTu* to this function and run. (Outputs *train* and *test*, which contain training and testing data for the models using stratified sampling by date)\
 	3.	regressionModels.m: Run script.\
 	4.	RSME values of each model are displayed!
