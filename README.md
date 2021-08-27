@@ -36,7 +36,7 @@ __If additional RAW photos are added to the directory to be included in processi
 	⁃	rsk1 = August 11, 2019\
 	⁃	rsk2 = August 12, 2019\
 	⁃	rsk3 = August 13, 2019\
-	5.	smoothTu.m: Pass one of the above *rsk* variables to this function (given the date of new RAW photos) and run function.\
+	5.	smoothTu.m: Pass one of the above *rsk* variables to this function (given the date of new RAW photos) and run function. (Outputs *smoothedTu*)\
 	6.	pairTiffTurbidity.m: Run script.\
 	7.	paired_data is ready for photo analysis!
 
