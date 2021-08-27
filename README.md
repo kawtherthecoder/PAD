@@ -38,7 +38,7 @@ __If additional RAW photos are added to the directory to be included in processi
 	6.	pairTiffTurbidity.m: Run script.\
 	7.	paired_data is ready for photo analysis!
 
-## Processing the photos (Selecting useful photos, Panel/Water extraction)
+## Processing the photos (Selecting useful photos, panel/water extraction)
 **The _paired_data_ structure is automatically updated as photos are processed.**\
 	1.	photoAnalysis.m: Run script.\
 	2.	Follow prompts given in MATLAB Command Window. Note:\
