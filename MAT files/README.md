@@ -21,15 +21,15 @@ Contains two variables that store the reflectances of the white and black panels
 
 ## normref.mat
 Structure containing information on average reflectances for six colored panels, separated by red, green, and near-infrared bands. Average reflectance was calculated over the following wavelengths for each band:
-* Red: 661-669 nm\
-* Green: 543-551 nm\
-* Near-infrared: 843-853 nm\
+* Red: 661-669 nm
+* Green: 543-551 nm
+* Near-infrared: 843-853 nm
 
 *norm_ref* contains the following fields:\
 	1.	Color of panel\
-	2.	Reflectance values in R band
-	3.	Reflectance values in G band
-	4.	Reflectance values in N band
+	2.	Reflectance values in R band\
+	3.	Reflectance values in G band\
+	4.	Reflectance values in N band\
 	5.	Mean of reflectance values in R band\
 	6.	Mean of reflectance values in G band\
 	7.	Mean of reflectance values in N band
