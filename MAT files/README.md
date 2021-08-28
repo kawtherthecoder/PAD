@@ -61,7 +61,7 @@ Structure containing file information of RAW photos from PAD 2019, including the
 	1.	path including containing folder, filename, and extension\
 	2.	full path name\
 	3.	time and date photo was taken\
-	4.	file path where Kawther saved the images — used to pull images for photo processing, these paths are copied to *paired_data*
+	4.	local file path where Kawther saved the images — used to pull images for photo processing, these paths are copied to *paired_data*
 
 
 ## refRGNTu.mat
