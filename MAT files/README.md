@@ -1,4 +1,4 @@
-# Desciptions of .MAT files
+# Descriptions of .MAT files
 
 ## 13panels.mat
 Structure containing information on extracted 13 panels from close up image taken by the MAPIR camera with the following fields:\
