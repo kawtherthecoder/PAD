@@ -1,17 +1,18 @@
-% random forest regression to predict turbidity
-% new train/test data
+% regressionModels.m
+% Using random forest and SVM regression models to predict turbidity. See
+% GitHub README Machine Learning Models section for running procedure.
 load('refRGNTu.mat');
-rf_rmse1 = 0;
-rf_rmse2 = 0;
-svr_rmse1 = 0;
-svr_rmse2 = 0;
+rf_rmse1 = 0; % random forest rmse 1 -- only three-band reflectance values as features
+rf_rmse2 = 0; % random forest rmse 2 -- three-band reflectance values as features plus additional averaged feature
+svr_rmse1 = 0; % SVM rmse 1 -- only three-band reflectance values as features
+svr_rmse2 = 0; % SVM rmse 2 -- three-band reflectance values as features plus additional averaged feature
 rf_rsq1 = 0;
 rf_rsq2 = 0;
 svr_rsq1 = 0;
 svr_rsq2 = 0;
-ntrials = 40;
+ntrials = 40; % runs process this many times, each with new testing/training data -- averaged values over all trials are outputted
 for i = 1:ntrials
-    [train,test] = makeDataTable(refRGNTu);
+    [train,test] = makeDataTable(refRGNTu); % create stratified random sample training/testing data
     y_train = train.tu;
     y_test = test.tu;
     train = removevars(train,{'tu'});
@@ -53,10 +54,13 @@ for i = 1:ntrials
     svr_rmse1 = svr_rmse1 + sqrt(mean(svr_err1.^2));
     svr_rsq1 = svr_rsq1 + corrcoef(test.n./test.r,log(tu_fit));
 end
+% average RMSEs from all trials
 rf_rmse1 = rf_rmse1 / ntrials
 rf_rmse2 = rf_rmse2 / ntrials
 svr_rmse1 = svr_rmse1 / ntrials
 svr_rmse2 = svr_rmse2 / ntrials
+
+% average R-squared values from all trials
 rf_rsq1 = rf_rsq1 ./ ntrials
 rf_rsq2 = rf_rsq2 ./ ntrials
 svr_rsq1 = svr_rsq1 ./ ntrials
