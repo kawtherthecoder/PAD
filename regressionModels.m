@@ -6,10 +6,11 @@ rf_rmse1 = 0; % random forest rmse 1 -- only three-band reflectance values as fe
 rf_rmse2 = 0; % random forest rmse 2 -- three-band reflectance values as features plus additional averaged feature
 svr_rmse1 = 0; % SVM rmse 1 -- only three-band reflectance values as features
 svr_rmse2 = 0; % SVM rmse 2 -- three-band reflectance values as features plus additional averaged feature
-rf_rsq1 = 0;
-rf_rsq2 = 0;
-svr_rsq1 = 0;
-svr_rsq2 = 0;
+rf_rsq1 = 0; % random forest R^2 1 -- only three-band reflectance values as features
+rf_rsq2 = 0; % random forest R^2 2 -- three-band reflectance values as features plus additional averaged feature
+svr_rsq1 = 0; % SVM R^2 1 -- only three-band reflectance values as features
+svr_rsq2 = 0; % SVM R^2 2 -- three-band reflectance values as features plus additional averaged feature
+
 ntrials = 40; % runs process this many times, each with new testing/training data -- averaged values over all trials are outputted
 for i = 1:ntrials
     [train,test] = makeDataTable(refRGNTu); % create stratified random sample training/testing data
