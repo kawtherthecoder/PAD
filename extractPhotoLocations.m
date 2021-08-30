@@ -1,4 +1,4 @@
-% function to plot lat/long/z from EXIF metadata of jpgs.
+% function to plot lat/long/z from EXIF metadata of jpgs. (Provided by Ethan)
 % updated for PAD data, and to include IR camera field
 % NOTE: need to manually create .proj file
 % has try catch statement bc some UAV photos don't have GPS stamp (before I
