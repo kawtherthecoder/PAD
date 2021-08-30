@@ -1,4 +1,4 @@
-% Workflow for determining what IR camera should be seeing for each
+% Workflow for determining what IR camera should be seeing for each (Provided by Ethan)
 % calibration panel. Doesn't use matrix multiplication approach, but it
 % should (TODO).
 
