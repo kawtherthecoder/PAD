@@ -1,3 +1,14 @@
+% findClosestTime.m
+% Matches the closest measurement from the turbidity probe to a given drone
+% image.
+% Inputs:
+% phototime -- datetime photo was taken
+% tu -- turbidity probe values (NTU)
+% tutimes -- datetimes when turbidity measurements were taken
+% Outputs:
+% closest_tu -- closest turbdity value to when photo was taken (returns NAN
+% if taken over 30 seconds apart)
+% closest_time -- datetime of closest turbidty value 
 function [closest_tu,closest_time] = findClosestTime(phototime,tu,tutimes)
 % finding the closest time within a list to a given time (phototime)
 phototime.TimeZone = char.empty;
