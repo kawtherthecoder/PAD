@@ -1,5 +1,8 @@
 # Descriptions of .MAT files
 
+## paired_data.mat
+Structure containing information about photo analysis process: which photos have been processed and the processed information, such as digital number values of extracted panels and water pixels. See instructions for updating *paired_data* on GitHub main PAD directory README. The current file is too large to store on GitHub, so here is a link to download paired_data.mat from Google Drive: https://drive.google.com/file/d/1sHulP0lo-ZsdKGPhR22eJ__ToZIK1_-0/view?usp=sharing
+
 ## 13panels.mat
 Structure containing information on extracted 13 panels from close up image taken by the MAPIR camera with the following fields:\
 	1.	Coordinates of the corners of the panel (top left, top right, bottom left, bottom right)\
