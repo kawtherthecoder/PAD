@@ -1,8 +1,10 @@
-%function [tu,metric,red,nir] = plotTuNormRefBW(paired_data)
+% plotTuNormRef.m
+% Estimating water reflectance using only two calibration panels-white and black. The reflectance values for these panels are
+% assumed to be the same for each band and they are saved in bwref.mat
 ind = 1;
 n = 0;
 total = 0;
-load('bwref.mat');
+load('bwref.mat'); % black and white panel reflectances
 load('paired_data.mat');
 bwref = [whiteref,blackref];
 figure;
@@ -11,7 +13,7 @@ inbt = 0;
 
 for i = 1:length(paired_data)
     if paired_data(i).panelsel_flag == 1
-        rwater = paired_data(i).panel_info(1).meanValueR/0.2126;
+        rwater = paired_data(i).panel_info(1).meanValueR/0.2126; % adjusting for camera spectral response, (via MAPIR site: https://drive.google.com/file/d/1mxGQsYdyPKBpMT4hnnt8uT6aGa6LvRLa/view)
         gwater = paired_data(i).panel_info(1).meanValueG/0.7152;
         nwater = paired_data(i).panel_info(1).meanValueN/0.0722;
         
