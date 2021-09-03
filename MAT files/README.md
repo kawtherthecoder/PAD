@@ -50,7 +50,11 @@ Structure containing information on average reflectances for six colored panels,
 
 
 ## pad_boatmountedctd_2019.mat (Provided by Dr. Emily Eidam, UNC-CH)
-Structure containing PAD field data, a time series boat-mounted sensors. Relevant fields include:\
+Three structures containing PAD field data, a time series boat-mounted sensors. Each structure named *rsk* represents a different day:
+	⁃	rsk1 = August 11, 2019\
+	⁃	rsk2 = August 12, 2019\
+	⁃	rsk3 = August 13, 2019\
+	Relevant fields include:\
 	1.	td — time and date\
 	2.	cond — conductivity (mS/cm)\
 	3.	pres — pressure (dbar)\
