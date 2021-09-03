@@ -3,6 +3,17 @@
 ## paired_data.mat
 Structure containing information about photo analysis process: which photos have been processed and the processed information, such as digital number values of extracted panels and water pixels. See instructions for updating *paired_data* on GitHub main PAD directory README. The current file is too large to store on GitHub, so here is a link to download paired_data.mat from Google Drive: https://drive.google.com/file/d/1sHulP0lo-ZsdKGPhR22eJ__ToZIK1_-0/view?usp=sharing
 
+Fields of *paired_data*:\
+	1.	Photo file name\
+	2.	Photo date/time\
+	3.	Photo latitude\
+	4.	Photo longitude\
+	5.	Turbidity date/time\
+	6.	Turbidity (NTU)\
+	7.	TSS (g/L) — calibrated using Dr. Emily Eidam’s grab samples\
+	8.	Panel selection flag — whether the panels and water pixels have been extracted\
+	9.	Panel info — (if selection flag = 1) information on the extracted water and panel pixels stored in MATLAB structure *panel_info* (see contents)
+
 ## 13panels.mat
 Structure containing information on extracted 13 panels from close up image taken by the MAPIR camera with the following fields:\
 	1.	Coordinates of the corners of the panel (top left, top right, bottom left, bottom right)\
