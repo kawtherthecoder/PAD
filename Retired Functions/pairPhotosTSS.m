@@ -1,3 +1,5 @@
+% pairPhotosTSS.m
+% Pairing the point measurements from the ctd probe with the geolocations of nearest drone photo.
 function paired_data = pairPhotosTSS(ctd)
 
 %% extacting geolocation of photos
