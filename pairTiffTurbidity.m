@@ -1,5 +1,8 @@
-%% pairing TIFF images to turbidty measurements
-% load list of raw photos
+% pairTiffTurbidity
+% (Used to create/update paired_data when new RAW photos are saved to directory)
+% Pairing RAW images to turbidty measurements with the closest time (if closest time is within 30 seconds)
+
+%% load list of raw photos
 load('photos_RAW.mat');
 load('paired_data.mat');
 % load smoothedTu
