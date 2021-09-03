@@ -1,4 +1,9 @@
-%% removing outliers and smoothing turbidity measurements -- before matching to photos
+% smoothTu.m
+% Removing outliers and smoothing turbidity measurements -- before matching to photos
+% Inputs:
+% rsk -- rsk1, rsk2, or rsk3 depending on the date (see pad_boatmountedctd_2019.mat description)
+% Outputs:
+% smoothedTu -- structure containing datetimes, turbidity values, and conductivity values after smoothing and removal of outliers
 function smoothedTu = smoothTu(rsk)
 tb = extractfield(rsk,'tb')';
 cond = extractfield(rsk,'cond')';
