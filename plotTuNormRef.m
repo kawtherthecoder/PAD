@@ -1,10 +1,14 @@
+% plotTuNormRef.m
+% Estimating water reflectance using six colored calibration panel known reflectances and their adjusted DN values
+% Outputs (automatically saved in .mat file):
+% refRGNTu -- structure containing estimated R, G, and N water reflectances of each processed photo, plus the paired turbidity value
 function plotTuNormRef()
 ind = 1;
 n = 0;
 total = 0;
 load('norm_ref.mat');
 load('paired_data.mat');
-rref = extractfield(norm_ref,'meanR');
+rref = extractfield(norm_ref,'meanR'); % known panel reflectances (from spectrometer)
 gref = extractfield(norm_ref,'meanG');
 nref = extractfield(norm_ref,'meanN');
 
@@ -16,7 +20,7 @@ hold on
 
 for i = 1:length(paired_data)
     if paired_data(i).panelsel_flag == 1
-        rwater = paired_data(i).panel_info(1).meanValueR/0.2126;
+        rwater = paired_data(i).panel_info(1).meanValueR/0.2126; % adjusting for spectral response of the camera (via MAPIR site: https://drive.google.com/file/d/1mxGQsYdyPKBpMT4hnnt8uT6aGa6LvRLa/view)
         gwater = paired_data(i).panel_info(1).meanValueG/0.7152;
         nwater = paired_data(i).panel_info(1).meanValueN/0.0722;
         
@@ -78,11 +82,11 @@ for i = 1:length(paired_data)
             %xlabel('Adjusted DN'); ylabel('Estimated Reflectance');
         end
         
-        refwaterR = rf(rwater);
+        refwaterR = rf(rwater); % estimating water ref in each band
         refwaterG = gf(gwater);
         refwaterN = nf(nwater);
         
-        refRGNTu(ind).refR = refwaterR;
+        refRGNTu(ind).refR = refwaterR; % save info in refRGNTu
         refRGNTu(ind).refG = refwaterG;
         refRGNTu(ind).refN = refwaterN;
         refRGNTu(ind).tu = paired_data(i).tu;
