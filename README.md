@@ -60,4 +60,4 @@ __If additional RAW photos are added to the directory to be included in processi
 	1.	plotTuNormRef.m: Run script. (Outputs *refRGNTu*)\
 	2.	makeDataTable.m: Pass *refRGNTu* to this function and run. (Outputs *train* and *test*, which contain training and testing data for the models using stratified sampling by date)\
 	3.	regressionModels.m: Run script.\
-	4.	RSME values of each model are displayed!
+	4.	RMSE values of each model are displayed!
